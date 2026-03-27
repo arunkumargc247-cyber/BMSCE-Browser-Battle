@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65 LPA Record | APEX News</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root { --blood-red: #8C0000; }
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+
+        /* Custom Floating Animation for Image */
+        .float-shadow {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Smooth reveal for text links */
+        .back-link:hover svg {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="p-6 border-b sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <a href="index.html" class="back-link inline-flex items-center text-[#8C0000] font-bold uppercase tracking-widest text-sm transition-all">
+            <svg class="w-4 h-4 mr-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Back to Portal
+        </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto py-20 px-6">
+        <div data-aos="fade-down">
+            <span class="bg-red-100 text-red-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                Placements 2026
+            </span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black my-8 leading-tight tracking-tight" 
+            data-aos="fade-up" 
+            data-aos-delay="200">
+            Record Breaking <span class="text-[#8C0000]">65 LPA</span> Package Secured by Data Science Trio
+        </h1>
+        
+        <div class="relative py-10" data-aos="zoom-in" data-aos-delay="400">
+            <div class="absolute inset-0 bg-red-100 rounded-2xl transform rotate-2 -z-10"></div>
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200" 
+                 class="w-full h-[500px] object-cover rounded-2xl shadow-2xl float-shadow" 
+                 alt="Students Collaborating">
+        </div>
+
+        <div class="prose prose-lg max-w-none text-gray-600 leading-loose space-y-8 mt-12">
+            <p class="text-xl text-gray-800 font-medium" data-aos="fade-up" data-aos-delay="500">
+                In a historic milestone for APEX University, three final-year students from the <strong>Department of Data Science</strong> have secured international placements with a staggering package of <strong>65 Lakhs Per Annum (LPA)</strong>.
+            </p>
+            
+            <p data-aos="fade-up">
+                The students were recruited by a premier London-based Fintech firm following a rigorous five-round selection process that tested their expertise in predictive modeling, algorithmic trading, and large-scale data architecture.
+            </p>
+
+            <blockquote class="border-l-8 border-[#8C0000] bg-gray-50 p-8 italic my-10 text-2xl text-gray-800 rounded-r-xl" 
+                        data-aos="fade-left">
+                "Our curriculum's focus on real-world industrial datasets gave us the edge needed to solve the complex high-frequency trading problems presented during the hackathon round."
+            </blockquote>
+            
+            <p data-aos="fade-up">
+                The university’s placement cell noted that this year has seen a 40% increase in high-ticket international offers, cementing APEX's reputation as a global talent hub.
+            </p>
+
+            <div class="h-1 w-20 bg-[#8C0000] my-10" data-aos="zoom-in"></div>
+
+            <p class="font-bold text-gray-900" data-aos="fade-up">
+                This achievement reinforces APEX University's position as a leader in technical education and industry readiness.
+            </p>
+        </div>
+    </article>
+
+    <footer class="bg-gray-50 py-12 text-center border-t mt-20">
+        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">© 2026 APEX Newsroom | Refined Intelligence</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out'
+        });
+    </script>
+</body>
+</html>

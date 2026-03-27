@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Lab Inauguration | APEX News</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root { --blood-red: #8C0000; }
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; background-color: #f9fafb; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+
+        /* Tech-style floating animation */
+        .tech-float {
+            animation: techFloat 8s ease-in-out infinite;
+        }
+
+        @keyframes techFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.02); }
+        }
+
+        .back-link:hover svg {
+            transform: translateX(-5px);
+        }
+
+        /* Content Card Elevation */
+        .content-card {
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <nav class="p-6 bg-white/90 backdrop-blur-md border-b sticky top-0 z-50">
+        <a href="index.html" class="back-link inline-flex items-center text-[#8C0000] font-bold uppercase tracking-widest text-sm transition-all">
+            <svg class="w-4 h-4 mr-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            Back to Portal
+        </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto py-20 px-6">
+        <div data-aos="fade-right">
+            <span class="bg-gray-900 text-white px-4 py-1.5 rounded-md text-[10px] font-black uppercase tracking-[0.2em]">
+                Innovation Hub
+            </span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black my-8 leading-tight tracking-tight" 
+            data-aos="fade-up" 
+            data-aos-delay="200">
+            APEX Unveils <span class="text-[#8C0000]">State-of-the-Art</span> Heavy Robotics Facility
+        </h1>
+        
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl mb-12" data-aos="zoom-out" data-aos-delay="400">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" 
+                 class="w-full h-[500px] object-cover tech-float" 
+                 alt="Advanced Robotics Lab">
+        </div>
+
+        <div class="content-card bg-white p-10 md:p-16 rounded-3xl shadow-xl text-gray-600 leading-relaxed relative z-20" 
+             data-aos="fade-up" 
+             data-aos-offset="200">
+            
+            <p class="mb-8 font-bold text-2xl text-gray-900 border-l-4 border-[#8C0000] pl-6">
+                The Mechanical Engineering department has officially inaugurated its "Advanced Industrial Automation Lab" featuring industrial-grade 6-axis KUKA robotic arms.
+            </p>
+            
+            <div class="space-y-6 text-lg">
+                <p>The lab, established with a <strong>$2M grant</strong>, aims to bridge the gap between academic theory and industrial application. Students will now have hands-on access to technologies used in <strong>Tesla, SpaceX, and BMW</strong> assembly lines.</p>
+                
+                <div class="py-6">
+                    <hr class="border-gray-100">
+                </div>
+
+                <p class="italic text-gray-500 font-serif text-xl bg-gray-50 p-8 rounded-2xl border-t-2 border-gray-100">
+                    "This isn't just a lab; it's a factory of the future. Our students will graduate not just as engineers, but as masters of automation, ready to lead the fourth industrial revolution."
+                    <span class="block mt-4 not-italic font-sans text-xs font-black uppercase tracking-widest text-[#8C0000]">
+                        — Professor Sarah Jenkins, Head of Robotics
+                    </span>
+                </p>
+                
+                <p class="mt-8">
+                    The facility includes specialized zones for machine vision, haptic feedback research, and collaborative robotics (Cobots), ensuring that APEX remains at the forefront of global engineering research.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-white py-12 text-center border-t mt-20">
+        <div class="text-[#8C0000] font-serif font-black text-xl mb-2">APEX UNIVERSITY</div>
+        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Research • Innovation • Excellence</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-back'
+        });
+    </script>
+</body>
+</html>
