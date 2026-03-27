@@ -98,125 +98,6 @@
             background-position: center;
             background-size: cover;
         }
-
-        /* ========================================== */
-        /* APEX AI CHATBOT STYLES                     */
-        /* ========================================== */
-        #chatbot-container {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 9999;
-            font-family: 'Inter', sans-serif;
-        }
-
-        #chat-btn {
-            width: 65px;
-            height: 65px;
-            background-color: #8C0000;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(140, 0, 0, 0.4);
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 2px solid white;
-        }
-        #chat-btn:hover { transform: scale(1.1) rotate(10deg); }
-
-        #chat-window {
-            position: absolute;
-            bottom: 85px;
-            right: 0;
-            width: 380px;
-            height: 550px;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            opacity: 0;
-            pointer-events: none;
-            transform: translateY(20px) scale(0.95);
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-        #chat-window.active {
-            opacity: 1;
-            pointer-events: auto;
-            transform: translateY(0) scale(1);
-        }
-
-        .chat-header {
-            background: #8C0000;
-            color: white;
-            padding: 18px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .chat-header h3 { margin: 0; font-size: 18px; font-weight: 800; font-family: 'Playfair Display', serif; }
-        .chat-header p { margin: 0; font-size: 11px; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-        .close-chat { cursor: pointer; font-size: 22px; font-weight: bold; transition: opacity 0.3s; }
-        .close-chat:hover { opacity: 0.7; }
-
-        #chat-messages {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background: #f8f9fa;
-        }
-
-        .msg { max-width: 85%; padding: 12px 16px; border-radius: 1rem; font-size: 14px; line-height: 1.6; }
-        .bot-msg { background: white; border: 1px solid #e5e7eb; color: #1a1a1a; align-self: flex-start; border-bottom-left-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
-        .user-msg { background: #1a1a1a; color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
-        
-        /* Markdown formatting support for bot messages */
-        .bot-msg strong { color: #8C0000; font-weight: 800; }
-        .bot-msg p { margin-bottom: 8px; }
-        .bot-msg p:last-child { margin-bottom: 0; }
-
-        .chat-input-area {
-            padding: 15px;
-            background: white;
-            border-top: 1px solid #eee;
-            display: flex;
-            gap: 10px;
-        }
-        #chat-input {
-            flex: 1;
-            padding: 12px 18px;
-            border: 1px solid #ddd;
-            border-radius: 2rem;
-            outline: none;
-            font-size: 14px;
-            transition: border-color 0.3s;
-            background: #f9f9f9;
-        }
-        #chat-input:focus { border-color: #8C0000; background: white; }
-        #send-btn {
-            background: #8C0000;
-            color: white;
-            border: none;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s, transform 0.2s;
-        }
-        #send-btn:hover { background: #600000; transform: scale(1.05); }
-
-        .typing-indicator { display: none; align-self: flex-start; font-size: 12px; color: #888; padding: 0 10px; font-style: italic; }
     </style>
 </head>
 <body>
@@ -289,7 +170,6 @@
                 </p>
                 <div class="flex flex-wrap gap-6">
                     <a href="academics.html" class="inline-block bg-[#8C0000] text-white px-10 py-4 font-bold uppercase text-[11px] tracking-widest hover:bg-red-700 transition transform hover:-translate-y-1 shadow-xl">Explore Academics</a>        
-                    <a href="virtual-tour.html" class="border border-white text-white px-10 py-4 font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-black transition transform hover:-translate-y-1 shadow-xl">Virtual Tour</a>
                 </div>
             </div>
         </div>
@@ -311,7 +191,6 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-10">
-            
             <article class="news-card rounded-2xl shadow-lg flex flex-col group cursor-pointer" data-aos="fade-up" data-aos-delay="100" onclick="window.location.href='news-ai-summit.html';">
                 <div class="relative overflow-hidden h-56 bg-gray-200">
                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" alt="Tech Conference" class="news-img w-full h-full object-cover transition duration-700">
@@ -368,7 +247,6 @@
                     </a>
                 </div>
             </article>
-
         </div>
     </section>
 
@@ -436,37 +314,8 @@
         <p class="opacity-40 text-[10px] tracking-widest uppercase font-bold">Production-Ready University Portal © 2026 | Built for Excellence</p>
     </footer>
 
-    <div id="chatbot-container">
-        <div id="chat-window">
-            <div class="chat-header">
-                <div>
-                    <h3>APEX Assistant</h3>
-                    <p>Powered by Gemini AI</p>
-                </div>
-                <span class="close-chat" onclick="toggleChat()">✕</span>
-            </div>
-            
-            <div id="chat-messages">
-                <div class="msg bot-msg">Hello! I am the APEX AI, powered by Gemini. Feel free to ask me anything about the real world, coding, history, or APEX University!</div>
-            </div>
-            <div class="typing-indicator" id="typing">AI is generating response...</div>
-            
-            <div class="chat-input-area">
-                <input type="text" id="chat-input" placeholder="Ask me anything..." onkeypress="handleEnter(event)">
-                <button id="send-btn" onclick="sendMessage()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                </button>
-            </div>
-        </div>
-
-        <div id="chat-btn" onclick="toggleChat()">
-            ✨
-        </div>
-    </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS animations
         AOS.init({ 
             duration: 1000, 
             once: true,
@@ -474,7 +323,6 @@
             offset: 100
         });
 
-        // HERO SLIDER LOGIC
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         
@@ -486,7 +334,6 @@
         
         setInterval(nextSlide, 5000);
 
-        // GOOGLE TRANSLATE
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
@@ -495,97 +342,5 @@
         }
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        // ----------------------------------------------------
-        // PASTE YOUR GEMINI API KEY BELOW inside the quotes
-        // ----------------------------------------------------
-        const GEMINI_API_KEY = "YOUR_API_KEY_GOES_HERE"; 
-        
-        // System prompt instructs Gemini how to behave
-        const SYSTEM_PROMPT = "You are a highly intelligent, real-world AI integrated into the APEX University website. You must answer any real-world questions accurately, comprehensively, and intelligently, just as Google Gemini would. However, if asked about 'APEX University', act as its official, helpful ambassador.";
-
-        let chatHistory = [
-            { "role": "user", "parts": [{ "text": SYSTEM_PROMPT }] },
-            { "role": "model", "parts": [{ "text": "Understood. I will answer real-world questions accurately and act as the APEX ambassador when needed." }] }
-        ];
-
-        const chatWindow = document.getElementById('chat-window');
-        const messagesContainer = document.getElementById('chat-messages');
-        const userInput = document.getElementById('chat-input');
-        const typingIndicator = document.getElementById('typing');
-
-        function toggleChat() {
-            chatWindow.classList.toggle('active');
-            if(chatWindow.classList.contains('active')) {
-                userInput.focus();
-            }
-        }
-
-        function handleEnter(e) {
-            if (e.key === 'Enter') sendMessage();
-        }
-
-        async function sendMessage() {
-            const text = userInput.value.trim();
-            if (!text) return;
-
-            // Display user message
-            addMessageToUI(text, 'user-msg');
-            userInput.value = '';
-            
-            // Add to chat history for context
-            chatHistory.push({ "role": "user", "parts": [{ "text": text }] });
-
-            typingIndicator.style.display = 'block';
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
-
-            try {
-                // Call Gemini 1.5 Flash API
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ contents: chatHistory })
-                });
-
-                const data = await response.json();
-                
-                let botReply = "I'm sorry, I'm having trouble connecting to the servers right now.";
-                
-                if (data.error) {
-                    botReply = `Error: ${data.error.message} (Did you forget to add your API Key?)`;
-                } else if (data.candidates && data.candidates[0].content.parts[0].text) {
-                    botReply = data.candidates[0].content.parts[0].text;
-                    chatHistory.push({ "role": "model", "parts": [{ "text": botReply }] });
-                }
-
-                typingIndicator.style.display = 'none';
-                
-                // Parse basic Markdown (Bold and Paragraphs)
-                let formattedReply = botReply
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .split('\n')
-                    .filter(line => line.trim() !== '')
-                    .map(line => `<p>${line}</p>`)
-                    .join('');
-
-                addMessageToUI(formattedReply, 'bot-msg');
-
-            } catch (error) {
-                console.error(error);
-                typingIndicator.style.display = 'none';
-                addMessageToUI("<strong>Error:</strong> Ensure you have pasted a valid Gemini API key into the HTML code.", 'bot-msg');
-            }
-        }
-
-        function addMessageToUI(htmlText, className) {
-            const msgDiv = document.createElement('div');
-            msgDiv.className = `msg ${className}`;
-            msgDiv.innerHTML = htmlText; // Render HTML directly to support bold/paragraphs
-            
-            messagesContainer.appendChild(msgDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight; 
-        }
-    </script>
 </body>
 </html>
