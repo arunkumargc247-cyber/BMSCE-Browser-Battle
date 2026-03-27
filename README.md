@@ -1,9 +1,9 @@
 # APEX University Portal - Browser Battle Entry
 
-### 🏆 Project Overview
+### Project Overview
 A full-fledged, production-ready university portal designed to replicate the prestige of **Apex University**. 
 
-### ✨ Core Features (Implemented)
+### Core Features (Implemented)
 * **SaaS Aesthetic:** Minimalist white-space design with a **Blood Red (#8C0000)** accent.
 * **college-Style Hero Slider:** A high-end 6-image fading slider (`one.jpg` to `six.jpg`) with smooth 1.5s transitions.
 * **Sophisticated Mega Menu:** A non-fading, multi-layered navigation bar for Departments and Leadership profiles.
@@ -15,7 +15,7 @@ A full-fledged, production-ready university portal designed to replicate the pre
 
 ---
 
-### 🚀 Additional Ideas & Innovations (Mandatory)
+### Additional Ideas & Innovations (Mandatory)
 * **AI-Powered Virtual Assistant:** A context-aware chatbot for 24/7 admission queries.
 * **360° Virtual Campus Tour:** Interactive WebGL-based tour of labs and facilities.
 * **Alumni Network Portal:** A professional networking hub for graduated students to mentor current batches.
@@ -24,7 +24,7 @@ A full-fledged, production-ready university portal designed to replicate the pre
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 * **Frontend:** HTML5, CSS3, Tailwind CSS.
 * **Animations:** Animate.css, AOS (Animate On Scroll), CSS Cubic-Bezier.
 * **Charts:** Chart.js.
@@ -32,7 +32,7 @@ A full-fledged, production-ready university portal designed to replicate the pre
 
 ---
 
-### 📂 Project Structure
+### Project Structure
 ```text
 /
 ├── index.html            # Main Landing Page
