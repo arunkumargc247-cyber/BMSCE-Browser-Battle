@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Science Engineering | APEX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <style>
+        .page-bg { background: linear-gradient(rgba(255,255,255,0.94), rgba(255,255,255,0.94)), url('three.jpg'); background-size: cover; background-attachment: fixed; }
+        
+        /* Smooth Logo Slider Styling */
+        .logo-track {
+            display: flex;
+            width: calc(250px * 20);
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 10)); }
+        }
+    </style>
+</head>
+<body class="page-bg">
+    <div class="max-w-7xl mx-auto py-20 px-10">
+        <h1 class="text-6xl font-black mb-6" style="font-family: 'Playfair Display'; color: #8C0000;">Computer Science & Engineering (IOT & Cybersecurity including Blockchain)</h1>
+        <p class="text-xl text-gray-600 mb-12 max-w-4xl">The Department of Data Science at APEX is a hub for innovation, specializing in IOT & Cyber security including blockchain technology.</p>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-20">
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <h3 class="text-xl font-bold mb-6">Placement Growth (Last 5 Years)</h3>
+                <canvas id="PlacementChart"></canvas>
+            </div>
+            
+            <div class="flex flex-col justify-center">
+                <h3 class="text-3xl font-black mb-4">98% Placement Success</h3>
+                <p class="text-gray-600">Our students are consistently placed in top-tier multinational corporations with an average package of 16 LPA.</p>
+            </div>
+        </div>
+
+        <h3 class="text-center font-bold uppercase tracking-widest text-gray-400 mb-10">Our Recruiting Partners</h3>
+        <div class="overflow-hidden bg-white py-10 rounded-xl border border-gray-100">
+            <div class="logo-track space-x-12 items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tesla_Motors.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" class="h-8 w-40 object-contain grayscale opacity-50 hover:opacity-100 transition">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Placement Graph Logic
+        const ctx = document.getElementById('placementChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Students Placed',
+                    data: [350, 380, 420, 710, 850],
+                    borderColor: '#8C0000',
+                    tension: 0.4,
+                    fill: true,
+                    backgroundColor: 'rgba(140, 0, 0, 0.1)'
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
