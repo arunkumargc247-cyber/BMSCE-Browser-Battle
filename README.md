@@ -15,9 +15,7 @@ A full-fledged, production-ready university portal designed to replicate the pre
 
 ---
 
-### Additional Ideas & Innovations 
-* **AI-Powered Virtual Assistant:** A context-aware chatbot for 24/7 admission queries.
-* **360° Virtual Campus Tour:** Interactive WebGL-based tour of labs and facilities.
+### Additional features
 * **Alumni Network Portal:** A professional networking hub for graduated students to mentor current batches.
 * **Dark Mode Toggle:** A SaaS-standard feature for eye comfort and modern UI preference.
 * **Blockchain Credential Verification:** A secure way for employers to verify student degrees instantly.
