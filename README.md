@@ -1,4 +1,4 @@
-# APEX University Portal - Browser Battle Entry
+# APEX University Portal
 
 ### Project Overview
 A full-fledged, production-ready university portal designed to replicate the prestige of **Apex University**. 
@@ -15,7 +15,7 @@ A full-fledged, production-ready university portal designed to replicate the pre
 
 ---
 
-### Additional Ideas & Innovations (Mandatory)
+### Additional Ideas & Innovations 
 * **AI-Powered Virtual Assistant:** A context-aware chatbot for 24/7 admission queries.
 * **360° Virtual Campus Tour:** Interactive WebGL-based tour of labs and facilities.
 * **Alumni Network Portal:** A professional networking hub for graduated students to mentor current batches.
